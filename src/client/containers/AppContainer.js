@@ -8,7 +8,8 @@ import * as digitsActionCreators from '../actions/digits';
 
 function mapStateToProps(state) {
   return {
-    digitInfo: state.getIn(['digits', 'digitInfo'])
+    digitInfo: state.getIn(['digits', 'digitInfo']),
+    isActive: state.getIn(['digits', 'isActive'])
   };
 }
 

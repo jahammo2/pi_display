@@ -74,6 +74,7 @@ describe('Digits Actions', () => {
         this.sandbox.stub(digitsService, 'getDigitInfo').callsFake(() => {
           return Promise.reject(expectedErrorMsg);
         });
+
         promise = digitsActions.getDigitInfo()(dispatch);
       });
 

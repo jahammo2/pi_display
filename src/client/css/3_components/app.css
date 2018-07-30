@@ -1,0 +1,30 @@
+.c-app {
+  margin: 0 auto;
+  max-width: calc(var(--spacing-xxl) * 4);
+
+  &__headline {
+    text-align: center;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: calc(var(--spacing-xxl) * 2.5);
+  }
+
+  &__next-link {
+    color: var(--color-link-blue);
+    text-align: center;
+
+    &--disabled {
+      color: var(--color-light-grey);
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: var(--color-link-light-blue);
+    }
+  }
+}

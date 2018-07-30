@@ -21,10 +21,10 @@
 
   roles:
     - general
-    - ufw
+    # - ufw
     - deployer_user
-    - install_yarn
     - frontend_install_essentials
+    # - install_yarn
     - monit_install
     - nginx
     - frontend_deploy

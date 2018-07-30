@@ -25,6 +25,7 @@ describe('digitsReducer', function() {
 
     beforeEach(function() {
       const previousState = INITIAL_STATE.set('error', faker.hacker.phrase());
+
       nextState = digitsReducer(previousState, {
         type: 'GET_DIGIT_INFO_START'
       });
@@ -50,9 +51,11 @@ describe('digitsReducer', function() {
         othValue: faker.random.number(),
         nthValue: faker.random.number()
       };
+
       const previousState = Immutable.fromJS({
         isActive: true
       });
+
       nextState = digitsReducer(previousState, {
         type: 'GET_DIGIT_INFO_SUCCESS',
         payload: {
@@ -80,9 +83,11 @@ describe('digitsReducer', function() {
 
     beforeEach(function() {
       expectedError = faker.hacker.phrase();
+
       const previousState = Immutable.fromJS({
         isActive: true
       });
+
       nextState = digitsReducer(previousState, {
         type: 'GET_DIGIT_INFO_FAILURE',
         payload: {

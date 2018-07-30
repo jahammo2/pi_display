@@ -1,0 +1,20 @@
+.c-spinner {
+  &__container {
+    margin: 0 auto;
+    max-width: calc(var(--spacing-xxl) * 2);
+  }
+
+  &__overlay {
+    background: var(--color-overlay-white);
+    height: calc(100% - var(--spacing-med));
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    @media screen and (min-width: var(--screen-width-min)) {
+      height: 100%;
+    }
+  }
+}
