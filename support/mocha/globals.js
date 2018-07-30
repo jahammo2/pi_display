@@ -22,6 +22,6 @@ global.apiRequest = chai.request;
 global.document = document;
 global.expect = chai.expect;
 global.faker = faker;
-global.sandbox = sinon.sandbox;
+global.sinon = sinon;
 global.screen = screen;
 global.shallow = enzyme.shallow;

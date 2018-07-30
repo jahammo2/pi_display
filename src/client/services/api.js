@@ -1,8 +1,7 @@
 import axios from 'axios';
-import store from '../store';
 
 function init() {
-  return axios.create({ baseURL: '/api' });;
+  return axios.create({ baseURL: '/api' });
 }
 
 export {

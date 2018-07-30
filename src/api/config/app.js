@@ -6,7 +6,6 @@ const pathfinderUI = require('pathfinder-ui');
 
 const app = express();
 const apiRouter = require('../app/routes');
-const config = require('./index.js');
 
 require('../config/initializers/database');
 

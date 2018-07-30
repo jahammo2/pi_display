@@ -4,19 +4,18 @@ import {
 } from 'redux';
 
 import App from '../components/App';
-import * as helloWorldActionCreators from '../actions/helloWorldActions';
+import * as digitsActionCreators from '../actions/digits';
 
 function mapStateToProps(state) {
   return {
-    helloWorld: state.get('helloWorld'),
-    name: state.get('name')
+    digitInfo: state.getIn(['digits', 'digitInfo'])
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
     actions: {
-      helloWorld: bindActionCreators(helloWorldActionCreators, dispatch)
+      digits: bindActionCreators(digitsActionCreators, dispatch)
     }
   };
 }

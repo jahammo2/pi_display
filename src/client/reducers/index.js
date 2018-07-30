@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux-immutable';
-import helloWorld from './helloWorldReducer';
+import digits from './digits';
 
 export default combineReducers({
-  helloWorld
+  digits
 });

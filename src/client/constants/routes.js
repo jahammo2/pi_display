@@ -1,6 +1,5 @@
 const routes = {
-  AUTHENTICATION: {
-  },
+  DIGIT: '/digits/:nthValue',
 
   ROOT: '/'
 };

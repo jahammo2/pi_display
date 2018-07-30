@@ -9,8 +9,12 @@ config.devServer = {
   },
   hot: true,
   inline: true,
-  clientLogLevel: 'error',
-  stats: 'errors-only'
+  proxy: {
+    '/api': {
+      changeOrigin: true,
+      target: 'http://localhost:3000'
+    }
+  }
 };
 
 config.devtool = 'source-map';

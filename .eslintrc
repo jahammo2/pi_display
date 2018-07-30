@@ -4,6 +4,7 @@
     "no-undefined": "off",
   },
   "globals": {
+    "sinon": true
   }
 }
 
