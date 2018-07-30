@@ -1,0 +1,6 @@
+app_name: pi_display
+
+# App Configs
+fe_app_repo: git@github.com:jahammo2/pi_display.git
+fe_app_branch: master
+fe_build_command: yarn run build
